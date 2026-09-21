@@ -133,7 +133,7 @@ const amir: Filmmaker & Developer = {
 | 🎞️ Project | 🎬 Plot | 🛠️ Stack |
 |---|---|---|
 | [TelewebionDownloader](https://github.com/amire3m/TelewebionDownloader) | Download & archive Telewebion streams — for editors who hate buffering | Python |
-| [Digital-Robot-Face](https://github.com/amire3m/Digital-Robot-Face) | Interactive living robot face — چهره دیجیتال رباتی زنده با پایتون 🤖 | Python |
+| [Digital-Robot-Face](https://github.com/amire3m/Digital-Robot-Face) | Interactive living robot face built with Python 🤖 | Python |
 | [Rooya-Inventory-Rental](https://github.com/amire3m/Rooya-Inventory-Rental) | Student equipment rental system + PDF commitment generator for IRIB University | TypeScript |
 | [Emroschool](https://github.com/amire3m/Emroschool) | Web platform for a school / creative institute | TypeScript |
 
