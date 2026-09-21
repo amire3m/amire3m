@@ -143,7 +143,7 @@ const amir: Filmmaker & Developer = {
 
 <p align="center">
   <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amire3m&layout=compact&theme=tokyonight&border_color=00e5ff&title_color=00e5ff&text_color=c9d1d9&bg_color=0f0c29&hide_border=false&langs_count=8" />
-  <img width="49%" src="https://raw.githubusercontent.com/amire3m/amire3m/output/profile-3d-contrib/profile-night-rainbow.svg" alt="3D contribution graph" />
+  <img width="49%" src="https://raw.githubusercontent.com/amire3m/amire3m/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D contribution graph" />
 </p>
 
 <p align="center">
