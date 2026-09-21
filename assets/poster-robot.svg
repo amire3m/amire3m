@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300" font-family="monospace">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#082a33"/><stop offset="1" stop-color="#00e5ff"/>
+  </linearGradient></defs>
+  <rect width="600" height="300" fill="url(#g)"/>
+  <rect x="0" y="0" width="600" height="18" fill="#060512"/>
+  <rect x="0" y="282" width="600" height="18" fill="#060512"/>
+  <text x="40" y="120" fill="#fff" font-size="64" font-weight="bold">RF</text>
+  <text x="42" y="165" fill="#0f0c29" font-size="26" font-weight="bold">Digital-Robot-Face</text>
+  <text x="42" y="195" fill="#08333c" font-size="15">An interactive living robot face. It blinks back.</text>
+  <rect x="42" y="215" width="110" height="30" rx="15" fill="#0f0c29"/>
+  <text x="97" y="236" fill="#00e5ff" font-size="15" font-weight="bold" text-anchor="middle">▶ PYTHON</text>
+  <text x="560" y="120" fill="#ffffff" fill-opacity="0.3" font-size="90" font-weight="bold" text-anchor="end">🤖</text>
+</svg>

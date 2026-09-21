@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300" font-family="monospace">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#1a1440"/><stop offset="1" stop-color="#7b61ff"/>
+  </linearGradient></defs>
+  <rect width="600" height="300" fill="url(#g)"/>
+  <rect x="0" y="0" width="600" height="18" fill="#060512"/>
+  <rect x="0" y="282" width="600" height="18" fill="#060512"/>
+  <text x="40" y="120" fill="#fff" font-size="64" font-weight="bold">TD</text>
+  <text x="42" y="165" fill="#00e5ff" font-size="26" font-weight="bold">TelewebionDownloader</text>
+  <text x="42" y="195" fill="#d9d4ff" font-size="15">Archive Telewebion streams. No more buffering.</text>
+  <rect x="42" y="215" width="110" height="30" rx="15" fill="#00e5ff"/>
+  <text x="97" y="236" fill="#0f0c29" font-size="15" font-weight="bold" text-anchor="middle">▶ PYTHON</text>
+  <text x="560" y="120" fill="#ffffff" fill-opacity="0.25" font-size="90" font-weight="bold" text-anchor="end">🎬</text>
+</svg>

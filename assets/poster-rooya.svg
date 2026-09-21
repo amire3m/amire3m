@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300" font-family="monospace">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#3d0f1e"/><stop offset="1" stop-color="#ff4d6d"/>
+  </linearGradient></defs>
+  <rect width="600" height="300" fill="url(#g)"/>
+  <rect x="0" y="0" width="600" height="18" fill="#060512"/>
+  <rect x="0" y="282" width="600" height="18" fill="#060512"/>
+  <text x="40" y="120" fill="#fff" font-size="64" font-weight="bold">RR</text>
+  <text x="42" y="165" fill="#fff" font-size="25" font-weight="bold">Rooya-Inventory-Rental</text>
+  <text x="42" y="195" fill="#ffd9e0" font-size="15">Equipment rental + PDF commitments for IRIB Univ.</text>
+  <rect x="42" y="215" width="140" height="30" rx="15" fill="#fff"/>
+  <text x="112" y="236" fill="#3d0f1e" font-size="15" font-weight="bold" text-anchor="middle">▶ TYPESCRIPT</text>
+  <text x="560" y="120" fill="#ffffff" fill-opacity="0.3" font-size="90" font-weight="bold" text-anchor="end">🎞️</text>
+</svg>

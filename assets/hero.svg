@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" font-family="monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f0c29"/>
+      <stop offset="0.55" stop-color="#302b63"/>
+      <stop offset="1" stop-color="#0f0c29"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7b61ff"/>
+      <stop offset="1" stop-color="#00e5ff"/>
+    </linearGradient>
+    <pattern id="holes" width="48" height="28" patternUnits="userSpaceOnUse">
+      <rect width="48" height="28" fill="#060512"/>
+      <rect x="12" y="7" width="24" height="14" rx="3" fill="#1d1a3a"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="440" fill="url(#bg)"/>
+  <rect y="0" width="1200" height="28" fill="url(#holes)"/>
+  <rect y="412" width="1200" height="28" fill="url(#holes)"/>
+
+  <!-- letterbox frame -->
+  <rect x="40" y="48" width="1120" height="344" fill="none" stroke="#7b61ff" stroke-opacity="0.5" stroke-width="2"/>
+  <rect x="40" y="48" width="1120" height="34" fill="#000" fill-opacity="0.55"/>
+  <rect x="40" y="358" width="1120" height="34" fill="#000" fill-opacity="0.55"/>
+  <text x="70" y="71" fill="#00e5ff" font-size="16" letter-spacing="4">● REC &#160; A-CAM &#160; 24fps &#160; 4K</text>
+  <text x="1130" y="71" fill="#ff4d6d" font-size="16" text-anchor="end" letter-spacing="2">TC 00:00:00:00</text>
+
+  <!-- crosshair -->
+  <line x1="600" y1="90" x2="600" y2="350" stroke="#ffffff" stroke-opacity="0.18"/>
+  <line x1="120" y1="220" x2="1080" y2="220" stroke="#ffffff" stroke-opacity="0.18"/>
+  <circle cx="600" cy="220" r="86" fill="none" stroke="#ffffff" stroke-opacity="0.55" stroke-width="2"/>
+  <circle cx="600" cy="220" r="64" fill="none" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1"/>
+
+  <!-- countdown 3-2-1 loop -->
+  <text x="600" y="252" fill="#fff" font-size="72" font-weight="bold" text-anchor="middle" opacity="0">3
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.28;0.34" dur="6s" repeatCount="indefinite" begin="0s"/>
+  </text>
+  <text x="600" y="252" fill="#fff" font-size="72" font-weight="bold" text-anchor="middle" opacity="0">2
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.28;0.34" dur="6s" repeatCount="indefinite" begin="2s"/>
+  </text>
+  <text x="600" y="252" fill="#fff" font-size="72" font-weight="bold" text-anchor="middle" opacity="0">1
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.28;0.34" dur="6s" repeatCount="indefinite" begin="4s"/>
+  </text>
+
+  <!-- title block -->
+  <text x="600" y="312" fill="#fff" font-size="40" font-weight="bold" text-anchor="middle" letter-spacing="3">AMIRHOSSEIN ESMAEILBEIGI</text>
+  <rect x="330" y="324" width="540" height="30" rx="15" fill="url(#neon)"/>
+  <text x="600" y="345" fill="#0f0c29" font-size="17" font-weight="bold" text-anchor="middle" letter-spacing="2">DIRECTOR × DEVELOPER — CUT. COMMIT. PUSH. REPEAT.</text>
+</svg>
