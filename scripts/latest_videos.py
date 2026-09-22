@@ -1,31 +1,41 @@
-"""Refresh the 'latest videos' block from the channel RSS feed.
-Pure stdlib. Keeps existing content if the feed is unreachable."""
+"""Refresh the 'latest videos' block by scraping the channel videos page.
+Pure stdlib. Keeps existing content if the page is unreachable."""
 import pathlib
 import re
 import urllib.request
-import xml.etree.ElementTree as ET
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 README = ROOT / "README.md"
-CHANNEL_ID = "UCVnU81s3bgoYLSgJ3wIdLdQ"
-FEED = f"https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL_ID}"
-NS = {"a": "http://www.w3.org/2005/Atom", "m": "http://search.yahoo.com/mrss/"}
+VIDEOS_URL = "https://www.youtube.com/@amire3m/videos"
 
 BEGIN = "<!-- BEGIN LATEST-VIDEOS -->"
 END = "<!-- END LATEST-VIDEOS -->"
+ID_RE = re.compile(r'"videoId":"([A-Za-z0-9_-]{11})"')
+TITLE_RE = re.compile(r'"title":\{"runs":\[{"text":"((?:[^"\\]|\\.)*)"')
 
 
-def fetch_entries(n=3):
-    req = urllib.request.Request(FEED, headers={"User-Agent": "amire3m-profile/1.0"})
+def fetch_latest(n=3):
+    req = urllib.request.Request(
+        VIDEOS_URL,
+        headers={"User-Agent": "Mozilla/5.0", "Accept-Language": "en"},
+    )
     with urllib.request.urlopen(req, timeout=30) as r:
-        root = ET.fromstring(r.read())
-    out = []
-    for e in root.findall("a:entry", NS)[:n]:
-        vid = e.find("a:id", NS).text.rsplit(":", 1)[-1]
-        link = e.find("a:link", NS).attrib["href"]
-        title = e.find("a:title", NS).text or "Latest cut"
-        title = re.sub(r"\s+", " ", title).strip()
-        out.append((vid, link, title))
+        html = r.read().decode("utf-8", "ignore")
+    seen, out = set(), []
+    for m in ID_RE.finditer(html):
+        vid = m.group(1)
+        if vid in seen:
+            continue
+        seen.add(vid)
+        tail = html[m.end() : m.end() + 4000]
+        tm = TITLE_RE.search(tail)
+        title = "Latest cut"
+        if tm:
+            title = tm.group(1).encode().decode("unicode_escape", "ignore")
+            title = re.sub(r"\s+", " ", title).strip()[:80]
+        out.append((vid, f"https://www.youtube.com/watch?v={vid}", title))
+        if len(out) == n:
+            break
     return out
 
 
@@ -40,15 +50,15 @@ def card(vid, link, title):
 
 def main():
     try:
-        entries = fetch_entries()
+        entries = fetch_latest()
     except Exception as exc:  # noqa: BLE001 - keep old block on failure
-        print(f"feed unreachable, keeping existing block: {exc}")
+        print(f"page unreachable, keeping existing block: {exc}")
         return
     if not entries:
-        print("feed empty, keeping existing block")
+        print("no videos found, keeping existing block")
         return
     block = (
-        BEGIN + "\n<p align=\"center\">\n  "
+        BEGIN + '\n<p align="center">\n  '
         + "\n  ".join(card(*e) for e in entries)
         + "\n</p>\n" + END
     )
@@ -58,7 +68,7 @@ def main():
         print("markers missing, nothing to update")
         return
     README.write_text(pattern.sub(block, text), encoding="utf-8")
-    print(f"wrote {len(entries)} video cards")
+    print("wrote:", [t for _, _, t in entries])
 
 
 if __name__ == "__main__":
