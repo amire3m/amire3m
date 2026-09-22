@@ -1,5 +1,6 @@
 """Refresh the 'latest videos' block by scraping the channel videos page.
 Pure stdlib. Keeps existing content if the page is unreachable."""
+import json
 import pathlib
 import re
 import urllib.request
@@ -11,7 +12,17 @@ VIDEOS_URL = "https://www.youtube.com/@amire3m/videos"
 BEGIN = "<!-- BEGIN LATEST-VIDEOS -->"
 END = "<!-- END LATEST-VIDEOS -->"
 ID_RE = re.compile(r'"videoId":"([A-Za-z0-9_-]{11})"')
-TITLE_RE = re.compile(r'"title":\{"runs":\[{"text":"((?:[^"\\]|\\.)*)"')
+
+
+def oembed_title(vid):
+    url = f"https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v={vid}&format=json"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            title = json.load(r).get("title", "")
+        return re.sub(r"\s+", " ", title).strip()[:80] or "Latest cut"
+    except Exception:  # noqa: BLE001
+        return "Latest cut"
 
 
 def fetch_latest(n=3):
@@ -27,13 +38,9 @@ def fetch_latest(n=3):
         if vid in seen:
             continue
         seen.add(vid)
-        tail = html[m.end() : m.end() + 4000]
-        tm = TITLE_RE.search(tail)
-        title = "Latest cut"
-        if tm:
-            title = tm.group(1).encode().decode("unicode_escape", "ignore")
-            title = re.sub(r"\s+", " ", title).strip()[:80]
-        out.append((vid, f"https://www.youtube.com/watch?v={vid}", title))
+        out.append(
+            (vid, f"https://www.youtube.com/watch?v={vid}", oembed_title(vid))
+        )
         if len(out) == n:
             break
     return out
