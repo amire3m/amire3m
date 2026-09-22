@@ -132,9 +132,13 @@ const amir: Filmmaker & Developer = {
 
 > New cuts, BTS and experiments drop on YouTube + Instagram first. GitHub gets the tools that made them.
 
-<!-- BEGIN YOUTUBE-CARDS -->
-
-<!-- END YOUTUBE-CARDS -->
+<!-- BEGIN LATEST-VIDEOS -->
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=XhGp3ZyZObE"><img width="32%" src="https://i.ytimg.com/vi/XhGp3ZyZObE/hqdefault.jpg" alt="Featured cut" /></a>
+  <a href="https://www.youtube.com/watch?v=bU2srmh5xcY"><img width="32%" src="https://i.ytimg.com/vi/bU2srmh5xcY/hqdefault.jpg" alt="Featured cut" /></a>
+  <a href="https://www.youtube.com/watch?v=fx1FmS4QRHI"><img width="32%" src="https://i.ytimg.com/vi/fx1FmS4QRHI/hqdefault.jpg" alt="Featured cut" /></a>
+</p>
+<!-- END LATEST-VIDEOS -->
 
 <img width="100%" src="https://raw.githubusercontent.com/amire3m/amire3m/main/assets/divider.svg" alt="" />
 
@@ -148,14 +152,6 @@ const amir: Filmmaker & Developer = {
   <img width="49%" src="https://raw.githubusercontent.com/amire3m/amire3m/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D contribution graph" />
   <img width="49%" src="https://raw.githubusercontent.com/amire3m/amire3m/output/github-contribution-grid-snake-dark.svg" alt="snake eating contributions" />
 </p>
-
-<details>
-<summary><b>🎞️ Daily rushes — recent activity</b></summary>
-
-<!--START_SECTION:activity-->
-<!--END_SECTION:activity-->
-
-</details>
 
 <img width="100%" src="https://raw.githubusercontent.com/amire3m/amire3m/main/assets/divider.svg" alt="" />
 
