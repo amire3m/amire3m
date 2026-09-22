@@ -132,14 +132,6 @@ const amir: Filmmaker & Developer = {
 
 > New cuts, BTS and experiments drop on YouTube + Instagram first. GitHub gets the tools that made them.
 
-<!-- BEGIN LATEST-VIDEOS -->
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=TS1uBODdcOA"><img width="32%" src="https://i.ytimg.com/vi/TS1uBODdcOA/hqdefault.jpg" alt="فاطمه امینی(ننه نقلی) و ببعی در پشت صحنه سلام به آینده" /></a>
-  <a href="https://www.youtube.com/watch?v=MXOzsBtkDy0"><img width="32%" src="https://i.ytimg.com/vi/MXOzsBtkDy0/hqdefault.jpg" alt="فاطمه امینی و ببعی عروسک گردان و گوینده ها همه در یک قاب در پشت صحنه ویژه برنامه" /></a>
-  <a href="https://www.youtube.com/watch?v=WLRVB9ENzBA"><img width="32%" src="https://i.ytimg.com/vi/WLRVB9ENzBA/hqdefault.jpg" alt="فاطمه امینی و احسان مهدی لحظاتی قبل از شروع برنامه سلام به آینده در حال آماده شد" /></a>
-</p>
-<!-- END LATEST-VIDEOS -->
-
 <img width="100%" src="https://raw.githubusercontent.com/amire3m/amire3m/main/assets/divider.svg" alt="" />
 
 ### 📊 Box Office — GitHub in Motion
