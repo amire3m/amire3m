@@ -134,9 +134,9 @@ const amir: Filmmaker & Developer = {
 
 <!-- BEGIN LATEST-VIDEOS -->
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=XhGp3ZyZObE"><img width="32%" src="https://i.ytimg.com/vi/XhGp3ZyZObE/hqdefault.jpg" alt="Featured cut" /></a>
-  <a href="https://www.youtube.com/watch?v=bU2srmh5xcY"><img width="32%" src="https://i.ytimg.com/vi/bU2srmh5xcY/hqdefault.jpg" alt="Featured cut" /></a>
-  <a href="https://www.youtube.com/watch?v=fx1FmS4QRHI"><img width="32%" src="https://i.ytimg.com/vi/fx1FmS4QRHI/hqdefault.jpg" alt="Featured cut" /></a>
+  <a href="https://www.youtube.com/watch?v=TS1uBODdcOA"><img width="32%" src="https://i.ytimg.com/vi/TS1uBODdcOA/hqdefault.jpg" alt="Latest cut" /></a>
+  <a href="https://www.youtube.com/watch?v=MXOzsBtkDy0"><img width="32%" src="https://i.ytimg.com/vi/MXOzsBtkDy0/hqdefault.jpg" alt="Latest cut" /></a>
+  <a href="https://www.youtube.com/watch?v=WLRVB9ENzBA"><img width="32%" src="https://i.ytimg.com/vi/WLRVB9ENzBA/hqdefault.jpg" alt="Latest cut" /></a>
 </p>
 <!-- END LATEST-VIDEOS -->
 
