@@ -1,0 +1,19 @@
+name: Latest YouTube Videos
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  youtube:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DenverCoder1/github-readme-youtube-cards@main
+        with:
+          channel_id: UCVnU81s3bgoYLSgJ3wIdLdQ
+          max_videos: 3

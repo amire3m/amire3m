@@ -132,27 +132,29 @@ const amir: Filmmaker & Developer = {
 
 > New cuts, BTS and experiments drop on YouTube + Instagram first. GitHub gets the tools that made them.
 
+<!-- BEGIN YOUTUBE-CARDS -->
+<!-- END YOUTUBE-CARDS -->
+
 <img width="100%" src="https://raw.githubusercontent.com/amire3m/amire3m/main/assets/divider.svg" alt="" />
 
 ### 📊 Box Office — GitHub in Motion
 
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=amire3m&show_icons=true&theme=tokyonight&border_color=7b61ff&title_color=7b61ff&icon_color=00e5ff&text_color=c9d1d9&bg_color=0f0c29&hide_border=false&include_all_commits=true&count_private=true" />
-  <img width="49%" src="https://streak-stats.demolab.com?user=amire3m&theme=tokyonight&border_radius=10&border=7b61ff&background=0F0C29&fire=FF4D6D&currStreakLabel=7B61FF" />
+  <img width="100%" src="https://raw.githubusercontent.com/amire3m/amire3m/main/metrics/terminal.svg" alt="terminal dossier: stats, 3D calendar, habits, languages" />
 </p>
 
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amire3m&layout=compact&theme=tokyonight&border_color=00e5ff&title_color=00e5ff&text_color=c9d1d9&bg_color=0f0c29&hide_border=false&langs_count=8" />
   <img width="49%" src="https://raw.githubusercontent.com/amire3m/amire3m/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D contribution graph" />
+  <img width="49%" src="https://raw.githubusercontent.com/amire3m/amire3m/output/github-contribution-grid-snake-dark.svg" alt="snake eating contributions" />
 </p>
 
-<p align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=amire3m&theme=tokyo-night&bg_color=0f0c29&color=7b61ff&line=00e5ff&point=ff4d6d&area=true&hide_border=true" />
-</p>
+<details>
+<summary><b>🎞️ Daily rushes — recent activity</b></summary>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/amire3m/amire3m/output/github-contribution-grid-snake-dark.svg" alt="snake eating contributions" />
-</p>
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
+
+</details>
 
 <img width="100%" src="https://raw.githubusercontent.com/amire3m/amire3m/main/assets/divider.svg" alt="" />
 
@@ -175,6 +177,8 @@ const amir: Filmmaker & Developer = {
   <a href="https://www.instagram.com/amire3m/"><img height="42" src="https://img.shields.io/badge/Instagram-@amire3m-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
   <a href="https://www.youtube.com/@amire3m"><img height="42" src="https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=for-the-badge&logo=youtube&logoColor=white" /></a>
   <a href="https://x.com/amire3m"><img height="42" src="https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x&logoColor=white" /></a>
+  <a href="https://www.imdb.com/name/nm14046457/"><img height="42" src="https://img.shields.io/badge/IMDb-Filmography-F5C518?style=for-the-badge&logo=imdb&logoColor=black" /></a>
+  <a href="https://open.spotify.com/artist/5LDfOaMrAgTtwB03fUuRdG"><img height="42" src="https://img.shields.io/badge/Spotify-Artist-1DB954?style=for-the-badge&logo=spotify&logoColor=white" /></a>
 </p>
 
 <p align="center"><i>“Cinema is storytelling. Code is storytelling that runs.” — cut. commit. push. repeat. 🎞️⚡</i></p>
