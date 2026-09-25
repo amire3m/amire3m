@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="56" viewBox="0 0 1200 56">
   <defs>
     <linearGradient id="strip" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="rgb(123,97,255)"/>
-      <stop offset="0.5" stop-color="rgb(0,229,255)"/>
-      <stop offset="1" stop-color="rgb(255,77,109)"/>
+      <stop offset="0" stop-color="rgb(0,229,255)"/>
+      <stop offset="0.5" stop-color="rgb(255,77,109)"/>
+      <stop offset="1" stop-color="rgb(123,97,255)"/>
     </linearGradient>
     <pattern id="sp" width="40" height="56" patternUnits="userSpaceOnUse">
       <rect width="40" height="56" fill="#060512"/>
@@ -13,5 +13,5 @@
   </defs>
   <rect width="1200" height="56" fill="url(#sp)"/>
   <rect x="70" y="24" width="960" height="4" fill="url(#strip)"/>
-  <text x="1040" y="34" fill="#8f8ab8" font-size="13" font-family="monospace" letter-spacing="2">REEL DAY 267</text>
+  <text x="1040" y="34" fill="#8f8ab8" font-size="13" font-family="monospace" letter-spacing="2">REEL DAY 268</text>
 </svg>
